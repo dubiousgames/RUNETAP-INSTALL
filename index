@@ -1,8 +1,10 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Runetap | Official Site</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
             --black: #050508;
@@ -123,9 +125,9 @@
 <section id="game-info">
     <span class="section-label">FILE_01: OVERVIEW</span>
     <div class="content-panel">
-        <h2 style="font-family:'Space Mono'; margin-bottom: 1rem;">CLICKER.</h2>
+        <h2 style="font-family:'Space Mono'; margin-bottom: 1rem;">Standalone Experience.</h2>
         <p style="color: var(--dim); margin-bottom: 1.5rem;">
-            Runetap is A CLICKER GAME WITH ITS GAMEPLAY CONSISTING OF CLICKING A BUTTION AND BUYING UPGRADES.
+            Runetap is an independent project developed from the ground up. Separate from other studio titles, this game focuses on core survival mechanics and precision gameplay.
         </p>
         
         <div style="background: #1a1a25; aspect-ratio: 16/9; border-radius: 8px; border: 1px solid var(--border); margin: 2rem 0;">
@@ -155,8 +157,9 @@
 <a href="https://dubiousgames.github.io/" class="back-link">← BACK TO DUBIOUS GAMES HUB</a>
 
 <footer>
-    <p>© 2025 DUBIOUS GAMES. DEVELOPED BY KILLSWITCH.</p>
+    <p>&copy; 2025 DUBIOUS GAMES. DEVELOPED BY KILLSWITCH.</p>
 </footer>
 
-
+</body>
+</html>
 </body></html>
