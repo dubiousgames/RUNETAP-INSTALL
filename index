@@ -1,0 +1,162 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runetap | Official Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #050508;
+            --panel: #0d0d12;
+            --border: #1e1e2e;
+            --white: #ffffff;
+            --dim: #777799;
+            --runetap-main: #00d2ff; /* Runetap branding color */
+            --warning-amber: #f4d03f;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--black);
+            color: var(--white);
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            padding: 1.5rem;
+            background: rgba(5,5,8,0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-logo {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--runetap-main);
+            text-decoration: none;
+            letter-spacing: 0.1em;
+        }
+
+        .hero {
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-family: 'Space Mono', monospace;
+            font-size: clamp(2.5rem, 10vw, 5rem);
+            text-transform: uppercase;
+        }
+
+        section { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
+
+        .section-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            color: var(--dim);
+            margin-bottom: 2rem;
+            display: block;
+            border-left: 3px solid var(--runetap-main);
+            padding-left: 15px;
+        }
+
+        .content-panel {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            padding: 2.5rem;
+            border-radius: 16px;
+        }
+
+        .download-btn {
+            display: inline-block; 
+            background: var(--runetap-main); 
+            color: black; 
+            padding: 15px 40px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.1rem;
+            font-family: 'Space Mono', monospace;
+            margin-top: 2rem;
+            transition: 0.3s;
+        }
+        .download-btn:hover { 
+            transform: scale(1.05);
+            background: var(--white);
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 3rem;
+            color: var(--dim);
+            text-decoration: none;
+            font-family: 'Space Mono';
+            font-size: 0.8rem;
+        }
+
+        footer { text-align: center; padding: 4rem; opacity: 0.4; font-family: 'Space Mono'; font-size: 0.7rem; }
+    </style>
+</head>
+<body>
+
+<nav><a href="#" class="nav-logo">RUNETAP</a></nav>
+
+<div class="hero">
+    <p style="color:var(--runetap-main); font-family:'Space Mono'; margin-bottom: 10px; letter-spacing: 5px;">A PROJECT BY KILLSWITCH</p>
+    <h1 class="hero-title">RUNE<span style="color:var(--runetap-main);">TAP</span></h1>
+</div>
+
+<section id="game-info">
+    <span class="section-label">FILE_01: OVERVIEW</span>
+    <div class="content-panel">
+        <h2 style="font-family:'Space Mono'; margin-bottom: 1rem;">CLICKER.</h2>
+        <p style="color: var(--dim); margin-bottom: 1.5rem;">
+            Runetap is A CLICKER GAME WITH ITS GAMEPLAY CONSISTING OF CLICKING A BUTTION AND BUYING UPGRADES.
+        </p>
+        
+        <div style="background: #1a1a25; aspect-ratio: 16/9; border-radius: 8px; border: 1px solid var(--border); margin: 2rem 0;">
+            </div>
+
+        <div style="text-align: center;">
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/RUNETAP_REPO/releases/latest/download/Runetap.zip" class="download-btn">
+                DOWNLOAD RUNETAP.ZIP
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="safety-guide">
+    <span class="section-label" style="border-color: var(--warning-amber);">LOG_02: INSTALLATION</span>
+    <div class="content-panel" style="border-color: var(--warning-amber);">
+        <h3 style="font-family:'Space Mono'; color: var(--warning-amber); margin-bottom: 1.5rem;">SETUP INSTRUCTIONS</h3>
+        <ul style="list-style: none; font-size: 0.9rem; color: var(--dim);">
+            <li style="margin-bottom: 10px;"><strong style="color:var(--white);">1.</strong> Extract the .zip file to its own folder.</li>
+            <li style="margin-bottom: 10px;"><strong style="color:var(--white);">2.</strong> Run <strong>Runetap.exe</strong>.</li>
+            <li style="margin-bottom: 20px;"><strong style="color:var(--white);">3.</strong> If a Windows protection prompt appears, click <strong>"More Info"</strong> and then <strong>"Run Anyway"</strong>.</li>
+        </ul>
+        <p style="font-size: 0.8rem; font-style: italic;">This prompt is a normal part of running independent software directly from the developer.</p>
+    </div>
+</section>
+
+<a href="https://dubiousgames.github.io/" class="back-link">← BACK TO DUBIOUS GAMES HUB</a>
+
+<footer>
+    <p>© 2025 DUBIOUS GAMES. DEVELOPED BY KILLSWITCH.</p>
+</footer>
+
+
+</body></html>
