@@ -1,7 +1,20 @@
-<html lang="en"><head>
+<html lang=""><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Silex v3.6.4">
+<link rel="stylesheet" href="/css/index-9cb7435c5220c046abad933ff04cee2519f6b1726ca3c56d31ea711075e34d19.css">
+
+
+
+
+
+</head>
+<body id="i67l">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Runetap | Official Site</title>
+    <title>Runetap | Official Installer</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
     <style>
         :root {
@@ -10,7 +23,7 @@
             --border: #1e1e2e;
             --white: #ffffff;
             --dim: #777799;
-            --runetap-main: #00d2ff; /* Runetap branding color */
+            --runetap-green: #39ff14; /* Matched to your Farmhouse green */
             --warning-amber: #f4d03f;
         }
 
@@ -40,17 +53,18 @@
             font-family: 'Space Mono', monospace;
             font-size: 1.4rem;
             font-weight: 700;
-            color: var(--runetap-main);
+            color: var(--runetap-green);
             text-decoration: none;
             letter-spacing: 0.1em;
+            text-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
         }
 
         .hero {
-            min-height: 50vh;
+            min-height: 40vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 10rem 2rem 2rem;
+            padding: 8rem 2rem 2rem;
             text-align: center;
         }
 
@@ -60,7 +74,7 @@
             text-transform: uppercase;
         }
 
-        section { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
+        section { padding: 2rem 2rem; max-width: 900px; margin: 0 auto; }
 
         .section-label {
             font-family: 'Space Mono', monospace;
@@ -69,7 +83,7 @@
             color: var(--dim);
             margin-bottom: 2rem;
             display: block;
-            border-left: 3px solid var(--runetap-main);
+            border-left: 3px solid var(--runetap-green);
             padding-left: 15px;
         }
 
@@ -80,23 +94,39 @@
             border-radius: 16px;
         }
 
-        .download-btn {
-            display: inline-block; 
-            background: var(--runetap-main); 
-            color: black; 
-            padding: 15px 40px; 
-            border-radius: 8px; 
-            text-decoration: none; 
-            font-weight: bold; 
-            font-size: 1.1rem;
-            font-family: 'Space Mono', monospace;
+        /* Button Container */
+        .download-flex {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
             margin-top: 2rem;
+        }
+
+        .btn-main {
+            background: var(--runetap-green);
+            color: black;
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Space Mono', monospace;
             transition: 0.3s;
         }
-        .download-btn:hover { 
-            transform: scale(1.05);
-            background: var(--white);
+
+        .btn-sub {
+            background: transparent;
+            border: 1px solid var(--runetap-green);
+            color: var(--runetap-green);
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Space Mono', monospace;
+            transition: 0.3s;
         }
+
+        .btn-main:hover, .btn-sub:hover { transform: scale(1.05); filter: brightness(1.2); }
 
         .back-link {
             display: block;
@@ -110,52 +140,55 @@
 
         footer { text-align: center; padding: 4rem; opacity: 0.4; font-family: 'Space Mono'; font-size: 0.7rem; }
     </style>
-</head>
-<body>
+
+
 
 <nav><a href="#" class="nav-logo">RUNETAP</a></nav>
 
 <div class="hero">
-    <p style="color:var(--runetap-main); font-family:'Space Mono'; margin-bottom: 10px; letter-spacing: 5px;">A PROJECT BY KILLSWITCH</p>
-    <h1 class="hero-title">RUNE<span style="color:var(--runetap-main);">TAP</span></h1>
+    <p style="color:var(--runetap-green); font-family:'Space Mono'; margin-bottom: 10px; letter-spacing: 5px;">DEVELOPED BY KILLSWITCH</p>
+    <h1 class="hero-title">RUNE<span style="color:var(--runetap-green);">TAP</span></h1>
 </div>
 
-<section id="game-info">
-    <span class="section-label">FILE_01: OVERVIEW</span>
+<section id="download">
+    <span class="section-label">FILE_01: DISTRIBUTION</span>
     <div class="content-panel">
-        <h2 style="font-family:'Space Mono'; margin-bottom: 1rem;">Standalone Experience.</h2>
+        <h2 style="font-family:'Space Mono'; margin-bottom: 1rem;">Select Platform.</h2>
         <p style="color: var(--dim); margin-bottom: 1.5rem;">
-            Runetap is an independent project developed from the ground up. Separate from other studio titles, this game focuses on core survival mechanics and precision gameplay.
+            Runetap is available for both Desktop and Mobile. Choose your version below to start the installation.
         </p>
         
-        <div style="background: #1a1a25; aspect-ratio: 16/9; border-radius: 8px; border: 1px solid var(--border); margin: 2rem 0;">
-            </div>
+        <div class="download-flex">
+            <a href="https://github.com/dubiousgames/games/releases/download/update/RUNETAP.v1.8.6.zip" class="btn-main">
+                PC VERSION (.ZIP)
+            </a>
 
-        <div style="text-align: center;">
-            <a href="https://github.com/dubiousgames/games/releases/download/update/RUNETAP.v1.8.6.zip" class="download-btn">
-                DOWNLOAD RUNETAP.ZIP
+            <a href="https://github.com/dubiousgames/games/releases/download/update2/runetap.1.8.6.apk" class="btn-sub">
+                ANDROID (.APK)
             </a>
         </div>
     </div>
 </section>
 
-<section id="safety-guide">
-    <span class="section-label" style="border-color: var(--warning-amber);">LOG_02: INSTALLATION</span>
+<section id="safety">
+    <span class="section-label" style="border-color: var(--warning-amber);">LOG_02: INSTALLATION_HELP</span>
     <div class="content-panel" style="border-color: var(--warning-amber);">
-        <h3 style="font-family:'Space Mono'; color: var(--warning-amber); margin-bottom: 1.5rem;">SETUP INSTRUCTIONS</h3>
-        <ul style="list-style: none; font-size: 0.9rem; color: var(--dim);">
-            <li style="margin-bottom: 10px;"><strong style="color:var(--white);">1.</strong> Extract the .zip file to its own folder.</li>
-            <li style="margin-bottom: 10px;"><strong style="color:var(--white);">2.</strong> Run <strong>Runetap.exe</strong>.</li>
-            <li style="margin-bottom: 20px;"><strong style="color:var(--white);">3.</strong> If a Windows protection prompt appears, click <strong>"More Info"</strong> and then <strong>"Run Anyway"</strong>.</li>
-        </ul>
-        <p style="font-size: 0.8rem; font-style: italic;">This prompt is a normal part of running independent software directly from the developer.</p>
+        <h3 style="font-family:'Space Mono'; color: var(--warning-amber); margin-bottom: 1rem;">PC USER GUIDE</h3>
+        <p style="font-size: 0.85rem; color: var(--dim); margin-bottom: 1rem;">
+            If Windows SmartScreen flags the file: Click <strong>"More Info"</strong> and then <strong>"Run Anyway"</strong>. 
+            This happens because the executable is independently signed.
+        </p>
+        <h3 style="font-family:'Space Mono'; color: var(--warning-amber); margin-bottom: 1rem;">ANDROID USER GUIDE</h3>
+        <p style="font-size: 0.85rem; color: var(--dim);">
+            You may need to enable <strong>"Install from Unknown Sources"</strong> in your phone settings to run the APK.
+        </p>
     </div>
 </section>
 
-<a href="https://dubiousgames.github.io/DUB.MAIN/" class="back-link">← BACK TO DUBIOUS GAMES HUB</a>
+<a href="https://dubiousgames.github.io/dub.github.io/" class="back-link">← RETURN TO DUBIOUS HUB</a>
 
 <footer>
-    <p>© 2025 DUBIOUS GAMES. DEVELOPED BY KILLSWITCH.</p>
+    <p>© 2025 DUBIOUS GAMES. ALL RIGHTS RESERVED.</p>
 </footer>
 
 
